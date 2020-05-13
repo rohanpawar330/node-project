@@ -39,10 +39,10 @@ app.use((req, res, next) => {
 });
 
 // Routes which should handle requests
+// app.use("/chatRoom", chatRoom);
 app.use("/products", productRoutes);
 app.use("/orders", orderRoutes);
 app.use("/user", userRoutes);
-// app.use("/chatRoom", chatRoom);
 
 app.use((req, res, next) => {
   const error = new Error("Not found");
